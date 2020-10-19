@@ -1,0 +1,38 @@
+h1 {
+    font-family: sans-serif;
+font-size:65px;
+    color:orange;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 10px;
+    text-align: center;
+    text-decoration: blue;
+
+}
+
+body {
+    font: size 16px;;
+}
+
+.cor1 {
+ color: yellow;
+}
+.cor2 {
+    color:red
+}
+.cor3 {
+    color: brown
+}
+
+
+li{
+background-color: aqua;
+}
+.cordofundo {
+background-color: green;
+}
+
