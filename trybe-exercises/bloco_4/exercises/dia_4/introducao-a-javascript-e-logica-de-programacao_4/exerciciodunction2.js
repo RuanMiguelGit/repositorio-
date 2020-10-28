@@ -1,9 +1,10 @@
-function array ( Maiorvalor) {
-    let teste = [2, 3, 6, 7, 10, 1] ;
+ 
+// let teste = [2, 3, 6, 7, 10, 1];
+function array (maior ) {
     let maiorNumero  = 0
-    for ( index = 1; index < teste.length; index += 1){
-        if ( teste[index] > maiorNumero) {
-            maiorNumero = teste[index]
+    for ( index = 1; index < maior.length; index += 1){
+        if( maior[index] > maiorNumero) {
+            maiorNumero = maior[index]
         }
    
     }
@@ -11,4 +12,4 @@ function array ( Maiorvalor) {
 }
 
 
-console.log (array ( [2, 3, 6, 7, 10, 1] ))
+console.log ( array ( [2, 3, 6, 7, 50, 1]))
