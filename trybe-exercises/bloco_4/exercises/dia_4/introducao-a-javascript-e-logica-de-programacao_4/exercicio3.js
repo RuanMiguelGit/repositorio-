@@ -7,6 +7,6 @@ let info = {
 
   for ( let key in info) {
 
-    console.log(info[key])
+    console.log (key)
 
   }
