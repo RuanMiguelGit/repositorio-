@@ -1,13 +1,13 @@
-function array (maior ) {
-    let maiorNumero  = 100;
-    for ( index = 0; index < maior.length; index += 1){
-        if( maiorNumero > maior[index] ) {
-            maiorNumero = maior[index]
+function array (menor ) {
+    let menorNumero  = 100;
+    for ( index = 0; index < menor.length; index += 1){
+        if( menorNumero > menor[index] ) {
+            menorNumero = menor[index]
             
         }
    
     }
-        return maior.indexOf(maiorNumero)
+        return menor.indexOf(menorNumero)
 }
 
 
