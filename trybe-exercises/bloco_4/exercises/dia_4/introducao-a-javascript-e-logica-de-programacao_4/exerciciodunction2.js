@@ -5,10 +5,11 @@ function array (maior ) {
     for ( index = 1; index < maior.length; index += 1){
         if( maior[index] > maiorNumero) {
             maiorNumero = maior[index]
+            
         }
    
     }
-        return maiorNumero
+        return maior.indexOf(maiorNumero)
 }
 
 
