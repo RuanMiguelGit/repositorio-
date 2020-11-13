@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talk Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class='speaker-form-header'>
+    <h1>Curriculum Vitae</h1>
+  
+  </header>
+<fieldset class="legacy-form-row">
+  <form action="" method="GET" class="speaker-form">
+  <div class="form-row">
+        <div class="line-content">
+        <label for ="full-name"> Name</label>
+        <input type="text" name="name" id="full-name" maxlength="40" required> 
+
+        </div>
+
+    <div class="form-row">
+            <div class="line-content">
+            <label for ="email"> Email</label>
+            <input type="email" name="email" id="email" maxlength="50"required> 
+    
+    </div>
+
+    <div class="form-row">
+        <div class="line-content">
+        <label for ="cpf"> Cpf</label>
+        <input type="text" name="name" id="cpf" maxlength="11"required> 
+
+        </div>
+    <div class="form-row">
+            <div class="line-content">
+            <label for ="Endereco"> Endereço</label>
+            <input type="text" name="name" id="Endereco" maxlength="200" required> 
+    
+            </div>
+
+    <div class="form-row">
+                <div class="line-content">
+                <label for ="cidade"> Cidade</label>
+                <input type="text" name="name" id="cidade" maxlength="28" required> 
+        
+                </div>
+
+            <div class="line-content"> 
+                    <label for=''>T-shirt-size</label>
+                    <select name="T-shirt" id='T-shirt-size'>
+      
+      
+                      
+                   </select>
+            </div>
+
+
+        <div class="line-content"> 
+          
+
+            <legend>Tipo de Moradia</legend>
+            <input type="radio" name="moradia" id="moradia1" value="cs" >
+            <label for ="moradia1">Casa</label>
+
+            <input type="radio" name="moradia" id="moradia2" value="ap" required >
+            <label for ="moradia2">Apartamento</label>
+        </div>
+
+      </fieldset>
+      <fieldset>
+            <div class="line-content">
+            <label for="resumo1"> Resumo</label>
+            <textarea name="resumo" cols="100" rows="30" id="resumo1" maxlength="1000" placeholder="Escreva aqui um resumo do seu cv"></textarea>
+              
+            </div>
+
+            <div class="form-row">
+              <div class="line-content">
+              <label for ="cargo"> Cargo</label>
+              <input type="text" name="name" id="cargo" maxlength="40" required> 
+      
+              </div>
+
+              <div class="form-row">
+                <div class="line-content">
+                <label for ="desc"> Descrição Do Cargo</label>
+                <input type="text" name="name" id="desc" maxlength="500" required> 
+        
+                </div>
+
+                <div class="form-row">
+                  <div class="line-content">
+                  <label for ="inicio"> Data de inicio</label>
+                  <input type="date" name="name" id="inicio" maxlength="28" value="12/11/2020" min="01/01/1920" max="31/12/2012" required> 
+          
+                  </div>
+
+            <div class="line-content">
+              <label for="">
+
+                <input type="checkbox" name="disponivel" id="disponivel1"> Eu estou disponivel
+              </label>
+              <div class="line-content">
+                <button type="submit">Enviar</button>
+              </div>
+
+            </div> 
+
+            
+
+          </fieldset>
+
+        </div>
+
+
+  </div>
+
+  </form>
+  <script src="/script.js"></script>
+</body>
+</html>
