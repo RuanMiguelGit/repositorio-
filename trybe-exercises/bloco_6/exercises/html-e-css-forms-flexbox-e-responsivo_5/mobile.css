@@ -1,4 +1,4 @@
-*{
+body{
     font-size: larger;
     margin: auto;
 }
@@ -8,5 +8,6 @@ h1 {
 }
 
 img{
-    margin:100px
+    margin:10px
 }
+

@@ -1,0 +1,14 @@
+body{
+    background-color:blue;
+    font-size: small;
+    margin: auto;
+}
+figure{
+     display: flex; 
+     flex-direction: row;
+
+}
+
+figure img{
+   height: 120px;
+}

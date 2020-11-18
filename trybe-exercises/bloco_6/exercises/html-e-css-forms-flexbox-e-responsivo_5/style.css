@@ -15,3 +15,20 @@ img {
 figure {
     margin: 0;
 }
+
+@media only screen and (min-width:375px) and (max-width:812px) {
+
+    *{
+        font-size: larger;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: small;
+    
+    font-variant-ligatures: ;    {
+        margin:100px
+    }
+}
+
+
