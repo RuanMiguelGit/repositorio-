@@ -1,0 +1,59 @@
+.header-container {
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+    width: 100px;
+}
+
+.btn-container button:hover {
+    opacity: 20px;;
+
+}
+
+
+.reset-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+    width: 100px;
+}
+
+.reset-container button:hover {
+    opacity: 20px;;
+
+}
+
+
+.unclick-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+    width: 100px;
+}
+.unclick-container button:hover {
+    opacity: 20px;;
+
+}
+
+.countNum h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}

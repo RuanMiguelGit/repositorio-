@@ -71,3 +71,19 @@ return Longest
 }
 
 console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"))
+
+// Parte 3 click counter
+
+const clickCounter = document.querySelector('.btn-container button')
+const resetCounter = document.querySelector('.reset-container button')
+const unclickCounter = document.querySelector('.unclick-container button')
+let clickCount = document.querySelector('.countNum h1')
+
+    const countup = () => {clickCount.innerHTML ++;}
+    clickCounter.addEventListener('click', countup) 
+
+    const reset = () => {clickCount.innerHTML = 0;}
+    resetCounter.addEventListener('click', reset) 
+    
+    const unclick = () => {clickCount.innerHTML --;}
+    unclickCounter.addEventListener('click', unclick) 
