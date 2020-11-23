@@ -34,27 +34,27 @@ const order = {
     },
   };
   
-//   const customerInfo = (order) => {
-//     // Adicione abaixo as informações necessárias.
-//     // primeiro se busca por todas as variaveis pelo método normal 
+  const customerInfo = (order) => {
+    // Adicione abaixo as informações necessárias.
+    // primeiro se busca por todas as variaveis pelo método normal 
 
-//     const nameP = Object.keys(order)[0] // name
-//     const Cname = Object.values(order)[0]// Rafael 
-//     const phoneP= Object.keys(order)[1] //adress
-//     const Cphone = order.phoneNumber // 12313213
-//     const AdressesStreet = order.address.street
-//     const AdressesNumber = order.address.number
-//     const AdressesApartment = order.address.apartment
-//     const dPerson = (order.order.delivery.deliveryPerson)
-//     const DpersonWithObjectV = Object.values(order.order.delivery)[0]// Rafael 
-//     const Introduction =      
-//     `Olá ${DpersonWithObjectV}
-//     Entrega para: ${Cname} Telefone: ${Cphone}
-//     Endereço; ${AdressesStreet}, ${AdressesNumber}, Apartamento : ${AdressesApartment} `
-//     return Introduction
-//   }
+    const nameP = Object.keys(order)[0] // name
+    const Cname = Object.values(order)[0]// Rafael 
+    const phoneP= Object.keys(order)[1] //adress
+    const Cphone = order.phoneNumber // 12313213
+    const AdressesStreet = order.address.street
+    const AdressesNumber = order.address.number
+    const AdressesApartment = order.address.apartment
+    const dPerson = (order.order.delivery.deliveryPerson)
+    const DpersonWithObjectV = Object.values(order.order.delivery)[0]// Rafael 
+    const Introduction =      
+    `Olá ${DpersonWithObjectV}
+    Entrega para: ${Cname} Telefone: ${Cphone}
+    Endereço; ${AdressesStreet}, ${AdressesNumber}, Apartamento : ${AdressesApartment} `
+    return Introduction
+  }
 
-//  console.log(customerInfo(order));
+ console.log(customerInfo(order));
 
   
   const orderModifier = (order) => {
