@@ -18,12 +18,55 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  function AddInObject (Object, chave, wert) {
+//   ex1 
 
-     const add =  Object[chave] = wert;
-    return add
+//   const  AddInObject  = (Object, chave, wert) => {
+
+//     const add =  Object[chave] = wert;
+//     return add
+//   }
+
+//   console.log(AddInObject(lesson2, 'turno', 'manha'))
+
+//   console.log(lesson2)
+
+//   //ex 2
+//   const clés = obj => {
+//    const alicia = Object.keys(obj)
+//    return alicia
+//   }
+
+//   console.log(clés(lesson1))
+
+//   //ex3
+//   const clés = size => {
+//     const sizes = Object.entries(size).length
+//     return sizes
+//    }
+ 
+//    console.log(clés(lesson1))
+
+//    //ex4
+
+// const wert = obj => {
+//    const werts = Object.values(obj)
+//    return werts
+//   }
+
+//   console.log(wert(lesson1))
+
+  //ex 5 com o objeto criado
+
+
+  allLessons  = {
+
   }
 
-  console.log(AddInObject(lesson2, 'turno', 'manha'))
+const all = Object.assign(allLessons, {lesson1, lesson2, lesson3})
+console.log(allLessons)
 
-  console.log(lesson2)
+//ex 5 sem o objeto criado 
+
+const allLessonss = Object.assign({}, {lesson1,lesson2,lesson3})
+console.log(allLessonss)
+
