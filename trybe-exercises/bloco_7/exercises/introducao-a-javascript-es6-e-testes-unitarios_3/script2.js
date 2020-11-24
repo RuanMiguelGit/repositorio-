@@ -11,8 +11,12 @@ function myRemove(arr, item) {
 }
 
 assert.ok(myRemove([1,2,3,4],5), [1,2,3,4])
-// implemente seus testes aqui
+assert.notStrictEqual(myRemove([1,2,3,4],3), [1,2,3,4])
 
-// const expected = myRemove ([1, 2, 3, 4], 3)
+newarr = [5,6,7,8]
+const expected = myRemove(newarr, 5) //drible
 
-// assert.strictEqual(myRemove, ([1,2,4]), " o retorno não pode incluir o três")
+assert.ok(newarr, [5,6,7,8],'é iguial')  // Entendo, é uma artimanha, cria-se uma nova array chama a função nessa array e no assert ao inves de usar a constante que guardou a função voce chama o array enganando o assert
+assert.deepStrictEqual(myRemove(([1,2,3,4]),5),[1,2,3,4])
+
+
