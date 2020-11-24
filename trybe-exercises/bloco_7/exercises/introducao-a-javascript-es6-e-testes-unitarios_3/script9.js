@@ -7,7 +7,6 @@ const findTheNeedle = (words, item) => {
     for ( let index =0; index < words.length; index +=1) {
         if ( item === words[index]) {
             output = index
-            console.log(output)
 }
     }
     return output
