@@ -15,4 +15,5 @@ const greetPeople = (people) => {
 
   const output = greetPeople(parameter)
 
-  assert.deepStrictEqual(output, result)
+  assert.deepStrictEqual(output, result) 
+  assert.notDeepStrictEqual(output, parameter)
