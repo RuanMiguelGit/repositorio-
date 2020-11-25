@@ -1,17 +1,18 @@
-const assert = require('assert')
-
 const greetPeople = (people) => {
-    let greeting = 'Hello ';
+    let greeting = [];
   
     for (const person in people) {
-      greeting += people[person];
+      greeting.push(`Hello ${people[person]}`) ;
     }
     return greeting;
   };
+  
+  const assert = require('assert')
 
-
-
+  
   const parameter = ['Irina', 'Ashleigh', 'Elsa'];
   const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
-  const output = greetPeople(parameter) //  uso o parametro dado na chamada da função, 
-  assert.deepStrictEqual(greetPeople(output), result) // uso a chamada da função  e o result 
+
+  const output = greetPeople(parameter)
+
+  assert.deepStrictEqual(output, result)
