@@ -63,27 +63,18 @@ const books = [
   },
 ];
 
-const found = (element) => {
-    return element.author.birthYear === 1947
-}
-function authorBornIn1947() {   
-    return books.find(found).author.name
-}
+function smallerName() {
+  let nameBook;
 
-console.log(authorBornIn1947())
-// assert.equal(authorBornIn1947(), 'Stephen King');
+  books.forEach(element => {
+      if(!nameBook || element.name.length < nameBook.length){
+          nameBook = element.name
+      }
+  })
+  // escreva aqui o seu código
 
-const isBorn =() =>{
-    return books.find(element => element.author.name === 'H. P. Lovecraft').author.birthYear
-}
-
-console.log(isBorn())
-
-const dateOfBirth =(element) => {
-    return element.author.name ==='H. P. Lovecraft'
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
 }
 
-const superfound = () => books.find(dateOfBirth).author.birthYear
-
-
-console.log(superfound)
+assert.equal(smallerName(), 'Duna');
