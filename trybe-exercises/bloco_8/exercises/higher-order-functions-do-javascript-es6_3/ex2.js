@@ -65,25 +65,30 @@ const books = [
 ];
 
 
-function allNames(acc, element, index, array) {
-  let nomes;
- nomes = books.reduce((acc, element) => {
-  if((element.author.name).length === 0) {
-    return `${acc} ${element.author.name}.`
-  } else {
- `${acc} ${element.author.name},`
-    ,"Nomes:")
+// function allNames(acc, element, index, array) {
+//   let nomes;
+//  nomes = books.reduce((acc, element) => {
+//   if((element.author.name).length === 0) {
+//     return `${acc} ${element.author.name}.`
+//   } else {
+//  `${acc} ${element.author.name},`
+//     ,"Nomes:")
 
-  return nomes
+//   return nomes
   
-}}}
+// }}}
 
-  
-console.log(allNames())
+const listof= function(acc, val, i) {return [`${acc} ,${i}. ${val.name}`]}
 
-
-
+const  listsstring = books.reduce(listof, 'Nome:')
 
 
 
-assert.deepEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");
+console.log(listsstring)
+
+
+
+
+
+
+// assert.deepEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");
