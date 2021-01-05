@@ -45,3 +45,19 @@ describe('error tester', ()=>{
         })
     })
 })
+describe('test with async and await', ()=>{
+    it('test with async and await', async () =>{
+        const listnames  = await getUserName(5);
+        expect(listnames).toEqual("Paul")
+    })
+})
+
+describe('test the error', () =>{
+    it('test if you can catch the error', async () =>{
+        try {
+            await getUserName(2);
+        } catch(error) {
+            expect(error).toEqual({ error: 'User with 2 not found.' })
+        }
+    })
+})
