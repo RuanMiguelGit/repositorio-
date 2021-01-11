@@ -1,0 +1,15 @@
+.poke{
+    background-color:yellow;
+    text-align: center;
+    border: black 2px solid;
+}
+
+
+.eachOne {
+    border-radius: 70%;
+    border: black 2px groove;
+    background-color:white;
+    width: 20%;
+    box-shadow: 10px 10px;
+    display: inline-block;
+}
