@@ -1,7 +1,15 @@
 .poke{
-    background-color:yellow;
+    background-image: linear-gradient(to right, white ,rgb(240, 224, 0), rgb(255, 255, 255));
+
+    /* background-color:yellow; */
     text-align: center;
     border: black 2px solid;
+    padding: 20px;
+    width: 70%;
+    height: 100%;
+    margin-left: 10%;
+    border-radius: 10%;
+    border: ridge 2px yellow;
 }
 
 
@@ -10,6 +18,14 @@
     border: black 2px groove;
     background-color:white;
     width: 20%;
-    box-shadow: 10px 10px;
-    display: inline-block;
+    box-shadow: 3px 3px 3px 3px;
+     display: inline-block;
+    font-weight: bold;
+    margin:3%;
+}
+.pokename{
+    color: white;
+    background-color: black;
+    width: 100%;
+    border-radius: 10px;
 }
