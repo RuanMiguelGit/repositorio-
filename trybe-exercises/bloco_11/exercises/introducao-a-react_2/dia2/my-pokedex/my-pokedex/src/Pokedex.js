@@ -9,7 +9,7 @@ class Pokedex extends React.Component{
             <div className = "poke">
                 <h1 className="pokename"> Pokedex</h1>
                 <div className ="Gotit">
-                {pokemons.map(pokemon => <Pokemon name ={pokemon.name}  type={pokemon.type} averageWeight={pokemon.averageWeight.value} measurementUnit ={pokemon.averageWeight.measurementUnit} image ={pokemon.image}/>)}
+                {pokemons.map(pokemon => <Pokemon  key={pokemon.id} name ={pokemon.name}  type={pokemon.type} averageWeight={pokemon.averageWeight.value} measurementUnit ={pokemon.averageWeight.measurementUnit} image ={pokemon.image}/>)}
             </div>
             </div>
         )
